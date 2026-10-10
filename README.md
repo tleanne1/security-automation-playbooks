@@ -1,4 +1,5 @@
 # Security Automation & SOAR Engineering
+[![Security Automation Tests](https://github.com/tleanne1/security-automation-playbooks/actions/workflows/security-tests.yml/badge.svg)](https://github.com/tleanne1/security-automation-playbooks/actions/workflows/security-tests.yml)
 
 A cybersecurity engineering portfolio focused on security orchestration, automated investigation and response, SOAR playbook development, security integrations, and human-in-the-loop automation.
 
