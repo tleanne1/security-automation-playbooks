@@ -22,14 +22,30 @@ This repository contains vendor-neutral reference implementations and case studi
 - AI-Assisted Security Operations
 
 ## Security Automation Playbooks
+## Security Automation Playbooks
 
 | Workflow | Security Domain | Capabilities | Status |
 | --- | --- | --- | --- |
-| Universal Alert Triage & Enrichment | SOC / Incident Response | Normalization, enrichment, entity extraction, triage, escalation | In Development |
-| Risky Identity Investigation & Response | Identity Security | Identity enrichment, risk analysis, investigation, controlled response | Planned |
-| Email Security Investigation | Email Security | Message investigation, enrichment, IOC analysis, response | Planned |
-| Endpoint Investigation & Response | Endpoint Security | Endpoint enrichment, investigation, evidence collection, containment workflow | Planned |
-| Vulnerability Investigation & Remediation | Vulnerability Management | Finding enrichment, prioritization, remediation workflow | Planned |
+| [Universal Alert Triage & Enrichment](playbooks/universal-alert-triage/) | SOC / Incident Response | Normalization, entity extraction, explainable risk scoring, triage & escalation | **Working Implementation** |
+| [Identity Risk Investigation & Response](playbooks/identity-risk-response/) | Identity Security | Identity enrichment, risk correlation, investigation & controlled response | **Case Study** |
+| [Email Security Investigation & Response](playbooks/email-security-investigation/) | Email Security | IOC enrichment, evidence correlation, phishing investigation & remediation | **Case Study** |
+| [Endpoint Investigation & Response](playbooks/endpoint-investigation-response/) | Endpoint Security | Endpoint enrichment, evidence correlation, containment & response | **Case Study** |
+| [Vulnerability Investigation & Remediation](playbooks/vulnerability-remediation/) | Vulnerability Management | Asset correlation, risk prioritization, remediation & verification | **Case Study** |
+
+### Featured Implementation
+
+The [Universal Alert Triage & Enrichment](playbooks/universal-alert-triage/) project includes an executable Python reference implementation with:
+
+- Synthetic security telemetry
+- Input validation and normalization
+- Security entity extraction
+- Explainable risk scoring
+- Investigation routing
+- Human-in-the-loop response controls
+- Automated pytest coverage
+- GitHub Actions CI
+
+The remaining projects are security engineering case studies documenting investigation architecture, integration requirements, failure handling, response boundaries, and security controls across identity, email, endpoint, and vulnerability operations.
 
 ## Architecture Principles
 
@@ -73,6 +89,39 @@ The portfolio demonstrates patterns involving technologies and concepts such as:
 - SIEM / EDR / SOAR integrations
 - Security telemetry normalization
 - Agentic AI and LLM-assisted security workflows
+
+## SOAR & Security Automation Engineering
+
+My security automation work includes hands-on workflow engineering, platform evaluation, integration analysis, testing, and troubleshooting across enterprise security environments.
+
+### D3 Security
+
+Hands-on engineering experience includes:
+
+- Investigation and incident playbook development
+- Alert triage and enrichment workflows
+- Microsoft security integration mapping
+- Workflow import and portability validation
+- Utility-command and data-transformation workflows
+- Playbook testing and runtime validation
+- Connector and authentication troubleshooting
+- Response-action dependency analysis
+- Human-in-the-loop response design
+- Security telemetry normalization
+
+### SOAR Platform Evaluation
+
+I have also evaluated security orchestration platforms, including **Torq**, against areas such as:
+
+- Integration coverage
+- Workflow capabilities
+- API support
+- Security use cases
+- Implementation constraints
+- Automation architecture
+- Operational fit
+
+Platform evaluation and hands-on implementation experience are represented separately throughout this portfolio to avoid overstating implementation depth.
 
 ## Repository Structure
 
