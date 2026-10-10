@@ -1,0 +1,32 @@
+{
+  "alert_id": "ALT-2026-001",
+  "source": "identity-provider",
+  "alert_type": "suspicious_sign_in",
+  "title": "Suspicious Sign-In Activity",
+  "timestamp": "2026-10-10T14:32:18Z",
+  "severity": "high",
+  "status": "new",
+  "description": "A user account authenticated from an unusual location and IP address.",
+  "entities": {
+    "user": {
+      "user_id": "USR-1042",
+      "display_name": "Jordan Lee",
+      "email": "jordan.lee@example.com"
+    },
+    "source_ip": {
+      "address": "203.0.113.42"
+    },
+    "device": {
+      "device_id": "DEV-2048",
+      "hostname": "FIN-LT-042",
+      "managed": true
+    }
+  },
+  "detection": {
+    "risk_level": "high",
+    "risk_signals": [
+      "unusual_location",
+      "new_ip_address"
+    ]
+  }
+}
